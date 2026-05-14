@@ -1,0 +1,10 @@
+title: TravelVerge
+description: Off-the-beaten-path travel guides and tips
+theme: minima
+baseurl: ""
+url: "https://travelverge.io"
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+show_excerpts: true
+minima:
+  skin: dark
