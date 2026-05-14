@@ -1,8 +1,8 @@
 title: TravelVerge
 description: Off-the-beaten-path travel guides and tips
 theme: minima
-baseurl: ""
-url: "https://travelverge.io"
+baseurl: "/travelverge"
+url: "https://siavashsed.github.io"
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 show_excerpts: true
