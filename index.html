@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Travel Verge — Honest Travel Writing Without the Filters</title>
+<meta name="description" content="Independent travel writing built on specific experience — not press trips, not sponsored content, just what actually happened.">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{  --bg:#fefce8;--bg2:#fef3c7;--sur:#fde68a;
+  --pri:#c2410c;--pri2:#9a3412;
+  --txt:#1c1408;--mut:#927040;--brd:#f0d890;
+  --fh:Georgia,serif;--fb:system-ui,sans-serif;--fm:monospace;}
+body{font-family:var(--fb);background:var(--bg);color:var(--txt);font-size:15px;line-height:1.75}
+a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
+.lf-top{display:flex;align-items:center;justify-content:space-between;padding:18px 52px;border-bottom:1px solid var(--brd);background:var(--bg)}
+.lf-brand{font-family:var(--fh);font-size:22px;font-weight:700;color:var(--txt);letter-spacing:-0.5px;text-decoration:none}
+.lf-brand em{color:var(--pri);font-style:normal}
+.lf-nav{display:flex;gap:28px}.lf-nav a{font-size:13px;color:var(--mut);font-weight:500;transition:color .2s}.lf-nav a:hover{color:var(--txt);text-decoration:none}
+.lf-stage{background:var(--bg2);border-bottom:1px solid var(--brd);padding:64px 52px 52px}
+.lf-stage-eyebrow{font-size:11px;font-weight:700;color:var(--pri);text-transform:uppercase;letter-spacing:3px;margin-bottom:16px}
+.lf-stage h1{font-family:var(--fh);font-size:clamp(26px,3.5vw,46px);font-weight:700;line-height:1.15;max-width:640px;margin-bottom:16px;color:var(--txt)}
+.lf-stage p{color:var(--mut);font-size:16px;max-width:540px;line-height:1.85}
+.lf-reading{padding:56px 52px;max-width:1160px;margin:0 auto}
+.lf-reading-hd{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--mut);margin-bottom:28px;padding-bottom:10px;border-bottom:1px solid var(--brd)}
+.lf-stream{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:28px}
+.lf-post{background:var(--bg2);border-radius:10px;overflow:hidden;border:1px solid var(--brd);display:flex;flex-direction:column;transition:box-shadow .2s}
+.lf-post:hover{box-shadow:0 6px 24px rgba(0,0,0,.08)}
+.lf-post-body{padding:22px 22px 18px;flex:1;display:flex;flex-direction:column;gap:8px}
+.lf-post-label{font-size:10px;font-weight:700;color:var(--pri);text-transform:uppercase;letter-spacing:2px}
+.lf-post h2{font-family:var(--fh);font-size:17px;font-weight:700;line-height:1.35;color:var(--txt)}
+.lf-post p{font-size:13px;color:var(--mut);line-height:1.75;flex:1}
+.lf-post-foot{padding:0 22px 18px;display:flex;justify-content:space-between;align-items:center}
+.lf-post-date{font-size:11px;color:var(--mut)}
+.lf-post-link{font-size:13px;font-weight:600;color:var(--pri)}
+.lf-join{background:var(--bg2);border-top:1px solid var(--brd);border-bottom:1px solid var(--brd);padding:64px 52px;display:flex;gap:60px;align-items:center}
+.lf-join-text h2{font-family:var(--fh);font-size:clamp(20px,2.5vw,30px);font-weight:700;margin-bottom:10px;line-height:1.2}
+.lf-join-text p{color:var(--mut);font-size:14px;line-height:1.8}
+.lf-join-form{flex-shrink:0;width:340px}
+.lf-join-form p{color:var(--mut);font-size:13px;margin-bottom:12px}
+.lf-nl-input{width:100%;border:1px solid var(--brd);background:var(--bg);border-radius:6px;padding:11px 14px;font-size:14px;color:var(--txt);outline:none;margin-bottom:10px;transition:border-color .2s}
+.lf-nl-input:focus{border-color:var(--pri)}.lf-nl-input::placeholder{color:var(--mut)}
+.lf-nl-btn{width:100%;background:var(--pri);color:#fff;border:none;border-radius:6px;padding:11px;font-size:14px;font-weight:700;cursor:pointer;transition:background .2s}
+.lf-nl-btn:hover{background:var(--pri2)}.lf-nl-ok{color:var(--pri);font-weight:600;font-size:14px;padding:8px 0;text-align:center}
+.lf-basement{padding:24px 52px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.lf-foot-copy{font-size:12px;color:var(--mut)}
+.lf-foot-links{display:flex;gap:20px}.lf-foot-links a{font-size:12px;color:var(--mut)}.lf-foot-links a:hover{color:var(--pri);text-decoration:none}
+@media(max-width:760px){.lf-top{padding:14px 16px}.lf-stage{padding:40px 16px 32px}.lf-reading{padding:36px 16px}.lf-join{flex-direction:column;padding:48px 16px;gap:32px}.lf-join-form{width:100%}.lf-basement{padding:20px 16px;flex-direction:column;text-align:center}}
+</style>
+</head>
+<body>
+<div class="lf-top">
+  <a href="/" class="lf-brand">Travel <em>Verge</em></a>
+  <nav class="lf-nav"><a href="/">Home</a><a href="/about.html">About</a></nav>
+</div>
+<div class="lf-stage">
+  <div class="lf-stage-eyebrow">Travel & Destinations</div>
+  <h1>Honest Travel Writing Without the Filters</h1>
+  <p>Independent travel writing built on specific experience — not press trips, not sponsored content, just what actually happened.</p>
+</div>
+<div class="lf-reading">
+  <div class="lf-reading-hd">Latest Reading</div>
+  <div class="lf-stream" id="lf-stream"></div>
+</div>
+<div class="lf-join">
+  <div class="lf-join-text">
+    <h2>The Travel Letter</h2>
+    <p>Written by Ana Verge, independent travel journalist.</p>
+  </div>
+  <div class="lf-join-form">
+    <p>Monthly destination guides and travel notes from 60+ countries of independent experience.</p>
+    <form id="lf-nl" onsubmit="nlSub(event)">
+      <input type="email" class="lf-nl-input" placeholder="your@email.com" required>
+      <button type="submit" class="lf-nl-btn">Join the list</button>
+    </form>
+  </div>
+</div>
+<div class="lf-basement">
+  <span class="lf-foot-copy">© Travel Verge · Independent travel writing from a journalist who pays her own way.</span>
+  <div class="lf-foot-links"><a href="/">Home</a><a href="/about.html">About</a></div>
+</div>
+<script>
+async function loadPosts(){
+  const el=document.getElementById('lf-stream');
+  try{
+    const r=await fetch('./articles.json');if(!r.ok)throw 0;
+    const posts=await r.json();if(!posts.length)throw 0;
+    el.innerHTML=posts.slice(0,9).map(p=>`<div class="lf-post">
+      <div class="lf-post-body">
+        <div class="lf-post-label">Travel & Destinations</div>
+        <h2>${p.title}</h2>
+        <p>${p.meta_description||''}</p>
+      </div>
+      <div class="lf-post-foot"><span class="lf-post-date">${p.date_iso||''}</span><a class="lf-post-link" href="./${p.slug||'#'}">Read more →</a></div>
+    </div>`).join('');
+  }catch(e){
+    el.innerHTML='<div class="lf-post"><div class="lf-post-body"><div class="lf-post-label">Coming Soon</div><h2>New articles on the way</h2><p>Check back shortly.</p></div></div>';
+  }
+}
+function nlSub(e){e.preventDefault();document.getElementById('lf-nl').innerHTML='<div class="lf-nl-ok">✓ Welcome to the list.</div>';}
+loadPosts();
+</script>
+</body></html>
