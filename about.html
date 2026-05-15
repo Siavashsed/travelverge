@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About Ana Verge — Travel Verge</title>
+<meta name="description" content="Independent travel writing from a journalist who pays her own way.">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{  --bg:#fefce8;--bg2:#fef3c7;--sur:#fde68a;
+  --pri:#c2410c;--pri2:#9a3412;
+  --txt:#1c1408;--mut:#927040;--brd:#f0d890;
+  --fh:Georgia,serif;--fb:system-ui,sans-serif;--fm:monospace;}
+body{font-family:var(--fb);background:var(--bg);color:var(--txt);font-size:15px;line-height:1.75}
+a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
+.lf-top{display:flex;align-items:center;justify-content:space-between;padding:18px 52px;border-bottom:1px solid var(--brd);background:var(--bg)}
+.lf-brand{font-family:var(--fh);font-size:22px;font-weight:700;color:var(--txt);text-decoration:none}
+.lf-brand em{color:var(--pri);font-style:normal}
+.lf-nav{display:flex;gap:28px}.lf-nav a{font-size:13px;color:var(--mut);font-weight:500}.lf-nav a:hover{color:var(--txt);text-decoration:none}
+.abt-header{background:var(--bg2);border-bottom:1px solid var(--brd);padding:56px 52px;display:flex;align-items:center;gap:40px}
+.abt-avi{width:76px;height:76px;border-radius:50%;background:var(--pri);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:24px;font-weight:700;color:#fff;flex-shrink:0;border:3px solid var(--bg)}
+.abt-header h1{font-family:var(--fh);font-size:clamp(22px,3vw,36px);font-weight:700;margin-bottom:4px}
+.abt-header-role{font-size:14px;color:var(--pri);font-weight:600}
+.abt-main{max-width:700px;margin:0 auto;padding:52px 52px}
+.abt-section{margin-bottom:36px}
+.abt-section h2{font-family:var(--fh);font-size:18px;font-weight:700;color:var(--txt);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--brd)}
+.abt-section p{color:var(--mut);line-height:1.85;margin-bottom:14px}
+.lf-nl-box{background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:28px;margin-top:8px}
+.lf-nl-box h3{font-family:var(--fh);font-size:20px;font-weight:700;margin-bottom:8px}
+.lf-nl-box p{color:var(--mut);font-size:14px;margin-bottom:16px}
+.lf-nl-input{width:100%;border:1px solid var(--brd);background:var(--bg);border-radius:6px;padding:11px 14px;font-size:14px;color:var(--txt);outline:none;margin-bottom:10px;transition:border-color .2s}
+.lf-nl-input:focus{border-color:var(--pri)}.lf-nl-input::placeholder{color:var(--mut)}
+.lf-nl-btn{background:var(--pri);color:#fff;border:none;border-radius:6px;padding:11px 24px;font-size:14px;font-weight:700;cursor:pointer;transition:background .2s}
+.lf-nl-btn:hover{background:var(--pri2)}.lf-nl-ok{color:var(--pri);font-weight:600;padding:6px 0}
+.lf-basement{padding:24px 52px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-top:20px}
+.lf-foot-copy{font-size:12px;color:var(--mut)}.lf-foot-links{display:flex;gap:20px}.lf-foot-links a{font-size:12px;color:var(--mut)}
+@media(max-width:600px){.lf-top{padding:14px 16px}.abt-header{padding:36px 16px;flex-direction:column;gap:16px}.abt-main{padding:36px 16px}.lf-basement{padding:20px 16px}}
+</style>
+</head>
+<body>
+<div class="lf-top">
+  <a href="/" class="lf-brand">Travel <em>Verge</em></a>
+  <nav class="lf-nav"><a href="/">Home</a><a href="/about.html">About</a></nav>
+</div>
+<div class="abt-header">
+  <div class="abt-avi">AV</div>
+  <div><h1>Ana Verge</h1><div class="abt-header-role">Independent Travel Journalist</div></div>
+</div>
+<div class="abt-main">
+  <div class="abt-section"><h2>Background</h2><p>I've been traveling and writing independently for nine years, across 63 countries. I've made mistakes most travel bloggers would never admit to — bad border crossings, overpriced accommodation, wrong-season timing.</p><p>Travel Verge is the resource I wish had existed: specific, honest, and written by someone who went there on their own money. No sponsored stays, no destination board partnerships.</p></div>
+  <div class="abt-section"><h2>About This Site</h2><p>Independent travel writing built on specific experience — not press trips, not sponsored content, just what actually happened.</p></div>
+  <div class="lf-nl-box">
+    <h3>The Travel Letter</h3>
+    <p>Monthly destination guides and travel notes from 60+ countries of independent experience.</p>
+    <form id="abt-nl" onsubmit="nlSub(event)">
+      <input type="email" class="lf-nl-input" placeholder="your@email.com" required>
+      <button type="submit" class="lf-nl-btn">Subscribe</button>
+    </form>
+  </div>
+</div>
+<div class="lf-basement">
+  <span class="lf-foot-copy">© Travel Verge</span>
+  <div class="lf-foot-links"><a href="/">Home</a><a href="/about.html">About</a></div>
+</div>
+<script>function nlSub(e){e.preventDefault();e.target.innerHTML='<div class="lf-nl-ok">✓ Subscribed.</div>';}</script>
+</body></html>
