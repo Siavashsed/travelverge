@@ -2,140 +2,148 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Travel Verge - Honest Travel Writing Without the Filters</title>
+<title>Travel Verge — Honest Travel Writing Without the Filters</title>
 <meta name="description" content="Independent travel writing built on specific experience - not press trips, not sponsored content, just what actually happened.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{  --bg:#fefce8;--bg2:#fef3c7;--sur:#fde68a;
-  --pri:#c2410c;--pri2:#9a3412;
-  --txt:#1c1408;--mut:#927040;--brd:#f0d890;
-  --fh:Georgia,serif;--fb:system-ui,sans-serif;--fm:monospace;}
-body{font-family:var(--fb);background:var(--bg);color:var(--txt);font-size:15px;line-height:1.75}
-a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
-.lf-top{display:flex;align-items:center;justify-content:space-between;padding:18px 52px;border-bottom:1px solid var(--brd);background:var(--bg)}
-.lf-brand{font-family:var(--fh);font-size:22px;font-weight:700;color:var(--txt);letter-spacing:-0.5px;text-decoration:none}
-.lf-brand em{color:var(--pri);font-style:normal}
-.lf-nav{display:flex;gap:28px}.lf-nav a{font-size:13px;color:var(--mut);font-weight:500;transition:color .2s}.lf-nav a:hover{color:var(--txt);text-decoration:none}
-.lf-stage{background:var(--bg2);border-bottom:1px solid var(--brd);padding:64px 52px 52px}
-.lf-stage-eyebrow{font-size:11px;font-weight:700;color:var(--pri);text-transform:uppercase;letter-spacing:3px;margin-bottom:16px}
-.lf-stage h1{font-family:var(--fh);font-size:clamp(26px,3.5vw,46px);font-weight:700;line-height:1.15;max-width:640px;margin-bottom:16px;color:var(--txt)}
-.lf-stage p{color:var(--mut);font-size:16px;max-width:540px;line-height:1.85}
-.lf-reading{padding:56px 52px;max-width:1160px;margin:0 auto}
-.lf-reading-hd{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--mut);margin-bottom:28px;padding-bottom:10px;border-bottom:1px solid var(--brd)}
-.lf-stream{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:28px}
-.lf-post{background:var(--bg2);border-radius:10px;overflow:hidden;border:1px solid var(--brd);display:flex;flex-direction:column;transition:box-shadow .2s}
-.lf-post:hover{box-shadow:0 6px 24px rgba(0,0,0,.08)}
-.lf-post-body{padding:22px 22px 18px;flex:1;display:flex;flex-direction:column;gap:8px}
-.lf-post-label{font-size:10px;font-weight:700;color:var(--pri);text-transform:uppercase;letter-spacing:2px}
-.lf-post h2{font-family:var(--fh);font-size:17px;font-weight:700;line-height:1.35;color:var(--txt)}
-.lf-post p{font-size:13px;color:var(--mut);line-height:1.75;flex:1}
-.lf-post-foot{padding:0 22px 18px;display:flex;justify-content:space-between;align-items:center}
-.lf-post-date{font-size:11px;color:var(--mut)}
-.lf-post-link{font-size:13px;font-weight:600;color:var(--pri)}
-.lf-join{background:var(--bg2);border-top:1px solid var(--brd);border-bottom:1px solid var(--brd);padding:64px 52px;display:flex;gap:60px;align-items:center}
-.lf-join-text h2{font-family:var(--fh);font-size:clamp(20px,2.5vw,30px);font-weight:700;margin-bottom:10px;line-height:1.2}
-.lf-join-text p{color:var(--mut);font-size:14px;line-height:1.8}
-.lf-join-form{flex-shrink:0;width:340px}
-.lf-join-form p{color:var(--mut);font-size:13px;margin-bottom:12px}
-.lf-nl-input{width:100%;border:1px solid var(--brd);background:var(--bg);border-radius:6px;padding:11px 14px;font-size:14px;color:var(--txt);outline:none;margin-bottom:10px;transition:border-color .2s}
-.lf-nl-input:focus{border-color:var(--pri)}.lf-nl-input::placeholder{color:var(--mut)}
-.lf-nl-btn{width:100%;background:var(--pri);color:#fff;border:none;border-radius:6px;padding:11px;font-size:14px;font-weight:700;cursor:pointer;transition:background .2s}
-.lf-nl-btn:hover{background:var(--pri2)}.lf-nl-ok{color:var(--pri);font-weight:600;font-size:14px;padding:8px 0;text-align:center}
-.lf-basement{padding:24px 52px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
-.lf-foot-copy{font-size:12px;color:var(--mut)}
-.lf-foot-links{display:flex;gap:20px}.lf-foot-links a{font-size:12px;color:var(--mut)}.lf-foot-links a:hover{color:var(--pri);text-decoration:none}
-@media(max-width:760px){.lf-top{padding:14px 16px}.lf-stage{padding:40px 16px 32px}.lf-reading{padding:36px 16px}.lf-join{flex-direction:column;padding:48px 16px;gap:32px}.lf-join-form{width:100%}.lf-basement{padding:20px 16px;flex-direction:column;text-align:center}}
+body{font-family:'DM Sans',system-ui,sans-serif;background:#fefce8;color:#1c1408;font-size:15px;line-height:1.7}
+a{color:inherit;text-decoration:none}
+/* nav */
+.nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:18px 40px;background:rgba(254,252,232,.96);backdrop-filter:blur(10px);border-bottom:1px solid #f0d890}
+.nav-logo{font-family:'DM Serif Display',serif;font-size:22px;letter-spacing:-0.5px;color:#1c1408}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;font-weight:500;color:#927040;transition:color .2s}.nav-links a:hover{color:#c2410c}
+/* hero full-bleed */
+.atlas-hero{position:relative;height:86vh;min-height:520px;overflow:hidden;background:#fef3c7}
+.atlas-hero img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity 1s}
+.atlas-hero-overlay{position:absolute;inset:0;background:linear-gradient(165deg,transparent 30%,rgba(0,0,0,.7) 100%)}
+.atlas-hero-content{position:absolute;bottom:0;left:0;right:0;padding:52px 40px;max-width:760px}
+.hero-tag{display:inline-block;border:1px solid #c2410c;color:#c2410c;font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:4px 10px;margin-bottom:16px}
+.hero-title{font-family:'DM Serif Display',serif;font-size:clamp(28px,5vw,54px);line-height:1.1;color:#fff;margin-bottom:14px}
+.hero-sub{font-size:16px;color:rgba(255,255,255,.8);line-height:1.65;margin-bottom:20px}
+.hero-cta{display:inline-block;background:#c2410c;color:#fff;padding:12px 28px;font-size:14px;font-weight:600;border-radius:100px;transition:opacity .2s}
+.hero-cta:hover{opacity:.85}
+/* editorial grid */
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.section-label{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#c2410c;padding:40px 0 18px;border-bottom:2px solid #c2410c;margin-bottom:28px}
+.feat-grid{display:grid;grid-template-columns:2fr 1fr;gap:24px;margin-bottom:40px}
+.feat-card{cursor:pointer;overflow:hidden}
+.feat-card img{width:100%;height:320px;object-fit:cover;display:block;border-radius:8px;margin-bottom:14px;transition:transform .4s}
+.feat-card:hover img{transform:scale(1.02)}
+.feat-card-tag{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#c2410c;margin-bottom:8px}
+.feat-card h2{font-family:'DM Serif Display',serif;font-size:22px;line-height:1.25;color:#1c1408;margin-bottom:8px}
+.feat-card p{font-size:13px;color:#927040;line-height:1.65}
+.feat-card-date{font-size:11px;color:#927040;margin-top:10px}
+.stack-card{display:flex;flex-direction:column;gap:20px}
+.stack-item{display:grid;grid-template-columns:100px 1fr;gap:12px;cursor:pointer;padding-bottom:20px;border-bottom:1px solid #f0d890}
+.stack-item:last-child{border-bottom:none}
+.stack-item img{width:100px;height:72px;object-fit:cover;border-radius:6px}
+.stack-item-ph{width:100px;height:72px;background:#fef3c7;border-radius:6px;flex-shrink:0}
+.stack-item-title{font-family:'DM Serif Display',serif;font-size:15px;line-height:1.3;color:#1c1408;margin-bottom:4px}
+.stack-item-date{font-size:11px;color:#927040}
+/* more grid */
+.more-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:48px}
+.grid-card{cursor:pointer}
+.grid-card img{width:100%;height:200px;object-fit:cover;border-radius:8px;margin-bottom:12px;transition:transform .3s}
+.grid-card:hover img{transform:scale(1.02)}
+.grid-card-tag{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#c2410c;margin-bottom:6px}
+.grid-card h3{font-family:'DM Serif Display',serif;font-size:17px;line-height:1.3;color:#1c1408;margin-bottom:6px}
+.grid-card p{font-size:13px;color:#927040;line-height:1.6}
+/* newsletter */
+.nl-section{background:#fef3c7;border-radius:16px;padding:52px;margin:0 0 48px;text-align:center;border:1px solid #f0d890}
+.nl-section h2{font-family:'DM Serif Display',serif;font-size:clamp(22px,3vw,34px);margin-bottom:10px}
+.nl-section p{color:#927040;font-size:15px;margin-bottom:24px}
+.nl-row{display:flex;gap:10px;justify-content:center;max-width:440px;margin:0 auto}
+.nl-input{flex:1;border:1px solid #f0d890;background:#fefce8;color:#1c1408;border-radius:100px;padding:12px 20px;font-size:14px;outline:none}
+.nl-input:focus{border-color:#c2410c}
+.nl-btn{background:#c2410c;color:#fff;border:none;border-radius:100px;padding:12px 24px;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap}
+/* footer */
+.foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;padding:24px 40px;border-top:1px solid #f0d890;font-size:12px;color:#927040}
+.foot-links{display:flex;gap:20px}.foot-links a{color:#927040}.foot-links a:hover{color:#c2410c}
+@media(max-width:900px){.feat-grid{grid-template-columns:1fr}.more-grid{grid-template-columns:1fr 1fr}.nav{padding:14px 16px}}
+@media(max-width:600px){.more-grid{grid-template-columns:1fr}.atlas-hero-content{padding:32px 16px}.wrap{padding:0 16px}.nl-section{padding:32px 16px}.nl-row{flex-direction:column}.foot{flex-direction:column;text-align:center;padding:20px 16px}}
 </style>
 </head>
 <body>
 
-<!-- nav -->
-<div class="lf-top">
-  <a href="./" class="lf-brand">Travel <em>Verge</em></a>
-  <nav class="lf-nav"><a href="./">Home</a><a href="about.html">About</a></nav>
+<nav class="nav">
+  <div class="nav-logo">Travel Verge</div>
+  <div class="nav-links">
+    <a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy</a>
+  </div>
+</nav>
+
+<div class="atlas-hero">
+  <img id="pxl-img" alt="Travel Verge">
+  <div class="atlas-hero-overlay"></div>
+  <div class="atlas-hero-content">
+    <span class="hero-tag">Travel & Destinations</span>
+    <h1 class="hero-title" id="hero-title">Honest Travel Writing Without the Filters</h1>
+    <p class="hero-sub" id="hero-sub">Independent travel writing built on specific experience - not press trips, not sponsored content, just what actually happened.</p>
+    <a class="hero-cta" href="#" id="hero-cta">Read Story →</a>
+  </div>
 </div>
 
-<!-- hero -->
-<div class="lf-stage">
-  <div class="lf-stage-eyebrow">Travel & Destinations</div>
-  <h1>Honest Travel Writing Without the Filters</h1>
-  <p>Independent travel writing built on specific experience - not press trips, not sponsored content, just what actually happened.</p>
-</div>
-
-<!-- pexels-banner -->
-<!-- hero-banner -->
-<div id="pxl-wrap" style="width:100%;height:220px;overflow:hidden;position:relative;background:var(--bg2);border-top:1px solid var(--brd);border-bottom:1px solid var(--brd);">
-  <img id="pxl-img" style="width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s;display:block;" alt="">
-  <a id="pxl-cred" href="https://www.pexels.com" target="_blank" rel="noopener" style="position:absolute;bottom:6px;right:10px;font-size:10px;color:rgba(255,255,255,.5);opacity:0;transition:opacity .6s;text-decoration:none;">Photo: Pexels</a>
-</div>
-
-<!-- about section -->
-<div style="background:#fef3c7;border-top:1px solid #f0d890;border-bottom:1px solid #f0d890;padding:40px">
-  <div style="max-width:800px;margin:0 auto">
-    <div style="font-size:10px;color:#c2410c;text-transform:uppercase;letter-spacing:3px;margin-bottom:20px">// about this publication</div>
-    <div style="display:grid;grid-template-columns:60px 1fr;gap:20px;align-items:start;margin-bottom:24px">
-      <div style="width:56px;height:56px;border-radius:50%;background:#c2410c;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;color:#000;flex-shrink:0;letter-spacing:-1px">AV</div>
-      <div>
-        <div style="font-size:16px;font-weight:700;color:#1c1408;margin-bottom:2px">Ana Verge</div>
-        <div style="font-size:12px;color:#c2410c;margin-bottom:14px;font-weight:600">Independent Travel Journalist</div>
-        <p style="font-size:14px;color:#927040;line-height:1.85;margin-bottom:12px">I've been traveling and writing independently for nine years, across 63 countries. I've made mistakes most travel bloggers would never admit to - bad border crossings, overpriced accommodation, wrong-season timing.</p>
-        <p style="font-size:14px;color:#927040;line-height:1.85">Travel Verge is the resource I wish had existed: specific, honest, and written by someone who went there on their own money. No sponsored stays, no destination board partnerships.</p>
-      </div>
+<div class="wrap">
+  <div class="section-label">Featured Stories</div>
+  <div class="feat-grid">
+    <div class="feat-card" id="feat-main">
+      <img src="https://picsum.photos/seed/964a/800/400" alt="" loading="lazy">
+      <div class="feat-card-tag">Travel & Destinations</div>
+      <h2>New stories publishing soon</h2>
+      <p>Independent travel writing built on specific experience - not press trips, not sponsored content, just what actually happened.</p>
     </div>
-    <a href="about.html" style="display:inline-block;border:1px solid #c2410c;color:#c2410c;padding:8px 20px;border-radius:3px;font-size:12px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:1px;transition:all .2s">Full bio →</a>
+    <div class="stack-card" id="feat-stack"></div>
   </div>
+
+  <div class="section-label">More Stories</div>
+  <div class="more-grid" id="more-grid"></div>
 </div>
 
-<!-- articles -->
-<div class="lf-reading">
-  <div class="lf-reading-hd">Latest Reading</div>
-  <div class="lf-stream" id="lf-stream"></div>
-</div>
-
-<!-- newsletter -->
-<div class="lf-join">
-  <div class="lf-join-text">
+<div class="wrap">
+  <div class="nl-section">
     <h2>The Travel Letter</h2>
-    <p>Written by Ana Verge, independent travel journalist.</p>
-  </div>
-  <div class="lf-join-form">
     <p>Monthly destination guides and travel notes from 60+ countries of independent experience.</p>
-    <form id="lf-nl" onsubmit="nlSub(event)">
-      <input type="email" class="lf-nl-input" placeholder="your@email.com" required>
-      <button type="submit" class="lf-nl-btn">Join the list</button>
+    <form id="nl-f" onsubmit="nlSub(event)">
+      <div class="nl-row">
+        <input class="nl-input" type="email" placeholder="your@email.com" required>
+        <button class="nl-btn" type="submit">Subscribe</button>
+      </div>
     </form>
   </div>
 </div>
 
-<!-- footer -->
-<div class="lf-basement">
-  <span class="lf-foot-copy">© Travel Verge · Independent travel writing from a journalist who pays her own way.</span>
-  <div class="lf-foot-links"><a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="sms.html">SMS Policy</a><a href="meta-policy.html">Meta Policy</a></div>
-</div>
+<footer class="foot">
+  <span>© Travel Verge · Independent travel writing from a journalist who pays her own way.</span>
+  <div class="foot-links">
+    <a href="./">Home</a><a href="about.html">About</a>
+    <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a>
+  </div>
+</footer>
 
 <script>
-/* load articles stream */
 async function loadPosts(){
-  const el=document.getElementById('lf-stream');
   try{
-    const r=await fetch('./articles.json');if(!r.ok)throw 0;
-    const posts=await r.json();if(!posts.length)throw 0;
-    el.innerHTML=posts.slice(0,9).map(p=>`<div class="lf-post" style="display:grid;grid-template-columns:${p.image?'140px ':''}1fr;gap:0;overflow:hidden;">
-      ${p.image?`<a href="./${p.slug||'#'}/"><img src="${p.image}" alt="${p.title}" style="width:140px;height:100%;min-height:130px;object-fit:cover;display:block;"></a>`:''}
-      <div style="padding:18px 20px;">
-        <div class="lf-post-body">
-          <div class="lf-post-label">Travel & Destinations</div>
-          <h2>${p.title}</h2>
-          <p>${p.meta_description||''}</p>
-        </div>
-        <div class="lf-post-foot"><span class="lf-post-date">${p.date_iso||''}</span><a class="lf-post-link" href="./${p.slug||'#'}/">Read more →</a></div>
-      </div>
-    </div>`).join('');
-  }catch(e){
-    el.innerHTML='<div class="lf-post"><div class="lf-post-body"><div class="lf-post-label">Coming Soon</div><h2>New articles on the way</h2><p>Check back shortly.</p></div></div>';
-  }
+    var r=await fetch('./articles.json');if(!r.ok)throw 0;
+    var posts=await r.json();if(!posts||!posts.length)throw 0;
+    var h=posts[0];
+    /* hero */
+    if(h.image){var hi=document.getElementById('pxl-img');if(hi){hi.onload=function(){hi.style.opacity='1';};hi.src=h.image;}}
+    var ht=document.getElementById('hero-title'),hs=document.getElementById('hero-sub'),hc=document.getElementById('hero-cta');
+    if(ht)ht.textContent=h.title;
+    if(hs)hs.textContent=h.meta_description||'';
+    if(hc)hc.href='./'+h.slug+'/';
+    /* featured stack */
+    var fm=document.getElementById('feat-main');
+    if(fm&&posts[0])fm.innerHTML=(posts[0].image?'<img src="'+posts[0].image+'" alt="'+posts[0].title+'" loading="lazy">':'<div style="height:320px;background:#fef3c7;border-radius:8px;margin-bottom:14px"></div>')+'<div class="feat-card-tag">Travel & Destinations</div><a href="./'+posts[0].slug+'/"><h2>'+posts[0].title+'</h2></a><p>'+(posts[0].meta_description||'').slice(0,140)+'</p><div class="feat-card-date">'+(posts[0].date_iso||'')+'</div>';
+    var fs=document.getElementById('feat-stack');
+    if(fs)fs.innerHTML=posts.slice(1,4).map(function(p){return '<a href="./'+p.slug+'/" style="display:block"><div class="stack-item">'+(p.image?'<img src="'+p.image+'" alt="'+p.title+'" loading="lazy">':'<div class="stack-item-ph"></div>')+'<div><div class="stack-item-title">'+p.title+'</div><div class="stack-item-date">'+(p.date_iso||'')+'</div></div></div></a>';}).join('');
+    /* more grid */
+    var mg=document.getElementById('more-grid');
+    if(mg)mg.innerHTML=posts.slice(4,7).map(function(p){return '<a href="./'+p.slug+'/" style="display:block"><div class="grid-card">'+(p.image?'<img src="'+p.image+'" alt="'+p.title+'" loading="lazy">':'<div style="height:200px;background:#fef3c7;border-radius:8px;margin-bottom:12px"></div>')+'<div class="grid-card-tag">Travel & Destinations</div><h3>'+p.title+'</h3><p>'+(p.meta_description||'').slice(0,100)+'</p></div></a>';}).join('');
+  }catch(e){}
 }
-function nlSub(e){e.preventDefault();document.getElementById('lf-nl').innerHTML='<div class="lf-nl-ok">✓ Welcome to the list.</div>';}
+function nlSub(e){e.preventDefault();document.getElementById('nl-f').innerHTML='<p style="color:#c2410c;font-weight:600;font-size:15px;padding:12px 0">✓ You're on the list.</p>';}
 loadPosts();
 /* banner loader: pexels → picsum fallback */
 (function(){
@@ -151,10 +159,10 @@ loadPosts();
     fetch('https://api.pexels.com/v1/search?query='+encodeURIComponent('travel landscape adventure mountains destination')+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
       .then(function(r){return r.json();}).then(function(d){
         if(d.photos&&d.photos[0]){showImg(d.photos[0].src.large,'Photo: Pexels');}
-        else{showImg('https://picsum.photos/seed/892/1400/400','');}
-      }).catch(function(){showImg('https://picsum.photos/seed/892/1400/400','');});
+        else{showImg('https://picsum.photos/seed/964/1400/400','');}
+      }).catch(function(){showImg('https://picsum.photos/seed/964/1400/400','');});
   }else{
-    showImg('https://picsum.photos/seed/892/1400/400','');
+    showImg('https://picsum.photos/seed/964/1400/400','');
   }
 })();
 </script>
