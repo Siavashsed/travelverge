@@ -88,7 +88,7 @@ a{color:inherit;text-decoration:none}
   <div class="section-label">Featured Stories</div>
   <div class="feat-grid">
     <div class="feat-card" id="feat-main">
-      <img src="https://picsum.photos/seed/36a/800/400" alt="" loading="lazy">
+      <img src="https://picsum.photos/seed/349a/800/400" alt="" loading="lazy">
       <div class="feat-card-tag">Travel & Destinations</div>
       <h2>New stories publishing soon</h2>
       <p>Independent travel writing built on specific experience - not press trips, not sponsored content, just what actually happened.</p>
@@ -145,25 +145,41 @@ async function loadPosts(){
 }
 function nlSub(e){e.preventDefault();document.getElementById('nl-f').innerHTML='<p style="color:#c2410c;font-weight:600;font-size:15px;padding:12px 0">✓ You're on the list.</p>';}
 loadPosts();
-/* banner loader: pexels → picsum fallback */
+/* banner loader: pexels → unsplash → picsum */
 (function(){
   var el=document.getElementById('pxl-img');
   var cr=document.getElementById('pxl-cred');
   if(!el)return;
+  var SOURCES=['pexels', 'unsplash'];
+  var Q=encodeURIComponent('travel landscape adventure mountains destination');
+  var FALLBACK='https://picsum.photos/seed/349/1400/400';
   function showImg(src,cred){
     el.onload=function(){el.style.opacity='1';if(cred&&cr){cr.textContent=cred;cr.style.opacity='1';}};
     el.src=src;
   }
-  var k=localStorage.getItem('pexelsKey');
-  if(k){
-    fetch('https://api.pexels.com/v1/search?query='+encodeURIComponent('travel landscape adventure mountains destination')+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
+  function tryUnsplash(){
+    var uk=localStorage.getItem('unsplashKey');
+    if(!uk){showImg(FALLBACK,'');return;}
+    fetch('https://api.unsplash.com/photos/random?query='+Q+'&count=1&orientation=landscape&client_id='+uk)
+      .then(function(r){return r.json();}).then(function(d){
+        var p=Array.isArray(d)?d[0]:d;
+        if(p&&p.urls&&p.urls.regular){showImg(p.urls.regular,'Photo: '+((p.user&&p.user.name)||'Unsplash')+' / Unsplash');}
+        else{showImg(FALLBACK,'');}
+      }).catch(function(){showImg(FALLBACK,'');});
+  }
+  function tryPexels(){
+    var k=localStorage.getItem('pexelsKey');
+    if(!k){if(SOURCES.indexOf('unsplash')>=0)tryUnsplash();else showImg(FALLBACK,'');return;}
+    fetch('https://api.pexels.com/v1/search?query='+Q+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
       .then(function(r){return r.json();}).then(function(d){
         if(d.photos&&d.photos[0]){showImg(d.photos[0].src.large,'Photo: Pexels');}
-        else{showImg('https://picsum.photos/seed/36/1400/400','');}
-      }).catch(function(){showImg('https://picsum.photos/seed/36/1400/400','');});
-  }else{
-    showImg('https://picsum.photos/seed/36/1400/400','');
+        else if(SOURCES.indexOf('unsplash')>=0){tryUnsplash();}
+        else{showImg(FALLBACK,'');}
+      }).catch(function(){if(SOURCES.indexOf('unsplash')>=0)tryUnsplash();else showImg(FALLBACK,'');});
   }
+  if(SOURCES.indexOf('pexels')>=0){tryPexels();}
+  else if(SOURCES.indexOf('unsplash')>=0){tryUnsplash();}
+  else{showImg(FALLBACK,'');}
 })();
 </script>
 </body></html>
