@@ -32,7 +32,7 @@ img{max-width:100%;display:block}
 .nav-in{max-width:1240px;margin:0 auto;padding:0 24px;display:flex;align-items:center;height:64px;gap:40px}
 .nav-logo{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--text);letter-spacing:-.02em}
 .nav-logo em{color:var(--teal);font-style:normal}
-.nav-links{display:flex;gap:0;flex:1}
+.nav-links{display:flex;gap:0;flex:1;flex-wrap:nowrap;overflow:hidden}
 .nav-links a{font-size:13px;font-weight:500;padding:0 16px;height:64px;display:flex;align-items:center;color:var(--muted);transition:color .15s}
 .nav-links a:hover{color:var(--text)}
 .nav-plan{margin-left:auto;background:var(--teal);color:#fff;font-size:13px;font-weight:600;padding:10px 20px;border-radius:4px;transition:background .15s}
@@ -305,6 +305,15 @@ const PLACEHOLDER_ARTS=[
   {title:"Morocco Solo Travel: What No One Tells You First",slug:"morocco-solo-travel",cat:"africa",excerpt:"The medinas, the riads, the transport, the safety realities - from someone who made all the beginner mistakes.",mins:11,region:"Africa"},
 ];
 
+const IMGS=[
+  'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=75',
+  'https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=600&q=75',
+  'https://images.unsplash.com/photo-1500835556851-8d7d3af50f19?w=600&q=75',
+  'https://images.unsplash.com/photo-1473496169904-ecee8ba06e3c?w=600&q=75',
+  'https://images.unsplash.com/photo-1502003148287-a8ef8cfc7939?w=600&q=75',
+  'https://images.unsplash.com/photo-1488085061387-422e29b40080?w=600&q=75',
+];
+
 let arts=[];
 let activeFilter="all";
 
@@ -317,10 +326,10 @@ function setFilter(f){
 function renderDest(){
   const g=document.getElementById("destGrid");
   const filtered=activeFilter==="all"?arts:arts.filter(a=>a.cat===activeFilter);
-  g.innerHTML=filtered.slice(0,6).map(a=>`
+  g.innerHTML=filtered.slice(0,6).map((a,i)=>`
     <a href="./${a.slug}/" class="dest-card">
       <div class="dest-card-img">
-        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=70" alt="${a.title}" loading="lazy">
+        <img src="${IMGS[i%IMGS.length]}" alt="${a.title}" loading="lazy">
         <span class="dest-region">${a.region||a.cat}</span>
       </div>
       <div class="dest-card-body">
