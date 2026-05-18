@@ -88,7 +88,7 @@ a{color:inherit;text-decoration:none}
   <div class="section-label">Featured Stories</div>
   <div class="feat-grid">
     <div class="feat-card" id="feat-main">
-      <img src="https://picsum.photos/seed/58a/800/400" alt="" loading="lazy">
+      <img src="https://picsum.photos/seed/491a/800/400" alt="" loading="lazy">
       <div class="feat-card-tag">Travel & Destinations</div>
       <h2>New stories publishing soon</h2>
       <p>Independent travel writing built on specific experience - not press trips, not sponsored content, just what actually happened.</p>
@@ -159,10 +159,10 @@ loadPosts();
     fetch('https://api.pexels.com/v1/search?query='+encodeURIComponent('travel landscape adventure mountains destination')+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
       .then(function(r){return r.json();}).then(function(d){
         if(d.photos&&d.photos[0]){showImg(d.photos[0].src.large,'Photo: Pexels');}
-        else{showImg('https://picsum.photos/seed/58/1400/400','');}
-      }).catch(function(){showImg('https://picsum.photos/seed/58/1400/400','');});
+        else{showImg('https://picsum.photos/seed/491/1400/400','');}
+      }).catch(function(){showImg('https://picsum.photos/seed/491/1400/400','');});
   }else{
-    showImg('https://picsum.photos/seed/58/1400/400','');
+    showImg('https://picsum.photos/seed/491/1400/400','');
   }
 })();
 </script>
