@@ -223,7 +223,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:60px 0 2
     <div class="nav-links">
       <a href="./#destinations">Destinations</a>
       <a href="./#topics">What We Cover</a>
-      <a href="./#articles">Latest Guides</a>
+      <a href="./#articles">Articles</a>
       <a href="./#author">Our Story</a>
       <a href="./#faq">FAQ</a>
       <a href="about.html">About</a>
@@ -298,7 +298,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:60px 0 2
       <div class="footer-links">
         <a href="./#destinations">Destinations</a>
         <a href="./#topics">What We Cover</a>
-        <a href="./#articles">Latest Guides</a>
+        <a href="./#articles">Articles</a>
         <a href="./#faq">FAQ</a>
       </div>
     </div>
@@ -345,7 +345,7 @@ async function loadArticles(){
     grid.innerHTML=`
       <div class="empty-state">
         <svg viewBox="0 0 24 24" fill="none" stroke="#5eead4" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <h3>New travel guides coming soon</h3>
+        <h3>New articles coming soon</h3>
         <p>Our writers are out in the field right now. Subscribe to the Weekly Dispatch to be first to read them.</p>
       </div>`;
     return;
@@ -353,7 +353,7 @@ async function loadArticles(){
   grid.innerHTML=articles.slice(0,9).map(a=>{
     const img=a.image||a.cover||fallbackImg;
     const region=a.region||a.category||'Travel';
-    const cat=a.category||a.type||'Guide';
+    const cat=a.category||a.type||'Article';
     const excerpt=a.excerpt||a.description||'';
     const mins=a.mins||a.readingTime||a.read_time;
     const meta=mins?`<span>${mins} min read</span>`:'';
