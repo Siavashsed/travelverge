@@ -55,5 +55,42 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "The Travel Insurance Claim I Almost Had to Make in Lisbon (And What It Taught Me About Reading the Fine Print)",
+    "slug": "travel-insurance-claim-lisbon",
+    "meta_description": "A travel journalist's near-miss medical emergency in Lisbon reveals what most travelers get wrong about travel insurance claims.",
+    "date": "May 29, 2026",
+    "date_iso": "2026-05-29",
+    "author": "Ana Verge",
+    "image": "https://images.pexels.com/photos/35714915/pexels-photo-35714915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "insurancejournal.com",
+      "which.co.uk",
+      "nerdwallet.com",
+      "cdc.gov"
+    ],
+    "posted_iso": "2026-05-29",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "When Travel Health Passes Became Real: The IATA Travel Pass and What It Actually Meant in 2020",
+    "slug": "iata-travel-pass-2020-retrospective",
+    "meta_description": "In 2020, IATA launched its Travel Pass concept amid global border chaos. Ana Verge reports on what it meant for travelers at the time.",
+    "date": "September 15, 2020",
+    "date_iso": "2020-09-15",
+    "author": "Ana Verge",
+    "image": "https://images.pexels.com/photos/16108904/pexels-photo-16108904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "iata.org",
+      "unwto.org"
+    ],
+    "posted_iso": "2026-05-29",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
