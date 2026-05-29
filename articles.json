@@ -1,0 +1,62 @@
+[
+  {
+    "title": "The Day Travel Stopped: What the 2020 Global Border Shutdown Really Meant for Independent Travelers",
+    "slug": "2020-global-border-closures-travel",
+    "meta_description": "A 2020 retrospective on the mass global border closures that reshaped travel forever. Ana Verge reports from the ground as it happened.",
+    "date": "June 26, 2020",
+    "date_iso": "2020-06-26",
+    "author": "Ana Verge",
+    "image": "https://images.pexels.com/photos/1115358/pexels-photo-1115358.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "unwto.org",
+      "iata.org",
+      "oecd.org",
+      "europarl.europa.eu"
+    ],
+    "posted_iso": "2026-05-29",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The Travel Corridor That Never Was: How 2020's Bubble Plans Collapsed in Real Time",
+    "slug": "2020-travel-bubbles-collapse-retrospective",
+    "meta_description": "Ana Verge on the 2020 travel bubble announcements that raised hopes and then fell apart - and what that revealed about the future of international travel.",
+    "date": "April 06, 2020",
+    "date_iso": "2020-04-06",
+    "author": "Ana Verge",
+    "image": "https://images.pexels.com/photos/30769052/pexels-photo-30769052.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "unwto.org",
+      "iata.org",
+      "gov.uk"
+    ],
+    "posted_iso": "2026-05-29",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The EU Digital COVID Certificate Was 2021's Most Important Travel Document. Here's What It Actually Meant.",
+    "slug": "eu-digital-covid-certificate-2021",
+    "meta_description": "The EU Digital COVID Certificate launched in July 2021 and reshaped how 450 million people crossed borders. Ana Verge on what it really changed.",
+    "date": "October 08, 2021",
+    "date_iso": "2021-10-08",
+    "author": "Ana Verge",
+    "image": "https://images.pexels.com/photos/36409127/pexels-photo-36409127.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "commission.europa.eu",
+      "unwto.org",
+      "europarl.europa.eu",
+      "iata.org",
+      "who.int"
+    ],
+    "posted_iso": "2026-05-29",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  }
+]
