@@ -16,7 +16,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Destination Deep-Dives"
   },
   {
     "title": "The Travel Corridor That Never Was: How 2020's Bubble Plans Collapsed in Real Time",
@@ -34,7 +35,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Europe"
   },
   {
     "title": "The EU Digital COVID Certificate Was 2021's Most Important Travel Document. Here's What It Actually Meant.",
@@ -54,7 +56,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Europe"
   },
   {
     "title": "The Travel Insurance Claim I Almost Had to Make in Lisbon (And What It Taught Me About Reading the Fine Print)",
@@ -73,7 +76,8 @@
     "posted_iso": "2026-05-29",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Destination Deep-Dives"
   },
   {
     "title": "When Travel Health Passes Became Real: The IATA Travel Pass and What It Actually Meant in 2020",
@@ -91,6 +95,7 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Flight & Booking Strategy"
   }
 ]
