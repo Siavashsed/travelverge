@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "slug": "travel-insurance-claim-lisbon",
+    "title": "The Travel Insurance Claim I Almost Had to Make in Lisbon (And What It Taught Me About Reading the Fine Print)",
+    "meta_description": "A travel journalist&#x27;s near-miss medical emergency in Lisbon reveals what most travelers get wrong about travel insurance claims.",
+    "image": "https://images.pexels.com/photos/35714915/pexels-photo-35714915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "author": "Ana Verge",
+    "category": "Destination Deep-Dives",
+    "date_iso": "2026-05-29",
+    "date": ""
+  },
+  {
+    "slug": "eu-digital-covid-certificate-2021",
+    "title": "The EU Digital COVID Certificate Was 2021&#x27;s Most Important Travel Document. Here&#x27;s What It Actually Meant.",
+    "meta_description": "The EU Digital COVID Certificate launched in July 2021 and reshaped how 450 million people crossed borders. Ana Verge on what it really changed.",
+    "image": "https://images.pexels.com/photos/36409127/pexels-photo-36409127.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "author": "Ana Verge",
+    "category": "Europe",
+    "date_iso": "2021-10-08",
+    "date": ""
+  },
+  {
+    "slug": "iata-travel-pass-2020-retrospective",
+    "title": "When Travel Health Passes Became Real: The IATA Travel Pass and What It Actually Meant in 2020",
+    "meta_description": "In 2020, IATA launched its Travel Pass concept amid global border chaos. Ana Verge reports on what it meant for travelers at the time.",
+    "image": "https://images.pexels.com/photos/16108904/pexels-photo-16108904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "author": "Ana Verge",
+    "category": "Flight &amp; Booking Strategy",
+    "date_iso": "2020-09-15",
+    "date": ""
+  },
+  {
+    "slug": "2020-global-border-closures-travel",
+    "title": "The Day Travel Stopped: What the 2020 Global Border Shutdown Really Meant for Independent Travelers",
+    "meta_description": "A 2020 retrospective on the mass global border closures that reshaped travel forever. Ana Verge reports from the ground as it happened.",
+    "image": "https://images.pexels.com/photos/1115358/pexels-photo-1115358.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "author": "Ana Verge",
+    "category": "Destination Deep-Dives",
+    "date_iso": "2020-06-26",
+    "date": ""
+  },
+  {
+    "slug": "2020-travel-bubbles-collapse-retrospective",
+    "title": "The Travel Corridor That Never Was: How 2020&#x27;s Bubble Plans Collapsed in Real Time",
+    "meta_description": "Ana Verge on the 2020 travel bubble announcements that raised hopes and then fell apart - and what that revealed about the future of international travel.",
+    "image": "https://images.pexels.com/photos/30769052/pexels-photo-30769052.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "author": "Ana Verge",
+    "category": "Europe",
+    "date_iso": "2020-04-06",
+    "date": ""
+  }
+]
