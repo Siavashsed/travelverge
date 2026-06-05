@@ -48,5 +48,45 @@
     "category": "Europe",
     "date_iso": "2020-04-06",
     "date": ""
+  },
+  {
+    "title": "Slow Travel vs Fast Travel: What You Actually Remember (And What Vanishes)",
+    "slug": "slow-travel-vs-fast-travel-memory",
+    "meta_description": "Fast travel gives you stamps. Slow travel gives you stories. Travel journalist Ana Verge on what memory science and 60 countries taught her.",
+    "date": "June 05, 2026",
+    "date_iso": "2026-06-05",
+    "author": "Ana Verge",
+    "image": "https://images.pexels.com/photos/8250977/pexels-photo-8250977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ncbi.nlm.nih.gov",
+      "tandfonline.com",
+      "journals.sagepub.com",
+      "apa.org"
+    ],
+    "posted_iso": "2026-06-05",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Boeing's 737 MAX Grounding in 2019 Changed How Travelers Think About Aircraft Safety",
+    "slug": "boeing-737-max-grounding-2019",
+    "meta_description": "The 737 MAX grounding reshaped air travel in 2019. Ana Verge reports on what it meant for passengers, airlines, and trust in aviation safety.",
+    "date": "December 13, 2019",
+    "date_iso": "2019-12-13",
+    "author": "Ana Verge",
+    "image": "https://images.pexels.com/photos/2059628/pexels-photo-2059628.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "reuters.com",
+      "iata.org",
+      "ntsb.gov",
+      "statista.com",
+      "transportation.house.gov"
+    ],
+    "posted_iso": "2026-06-05",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
