@@ -88,5 +88,42 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Why Five-Star Spa Reviews Keep Lying to You",
+    "slug": "resort-spa-reviews-truth",
+    "meta_description": "A luxury travel writer on what resort and spa reviews get wrong, and the three tests that actually predict whether you will love a stay.",
+    "date": "July 15, 2026",
+    "date_iso": "2026-07-15",
+    "author": "Nina Bergstrom",
+    "image": "https://images.pexels.com/photos/9268043/pexels-photo-9268043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "globalwellnessinstitute.org",
+      "mckinsey.com",
+      "ftc.gov"
+    ],
+    "posted_iso": "2026-07-15",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The Maldives Just Reopened, and It's Betting Everything on the Private Island",
+    "slug": "maldives-reopening-2020-private-island",
+    "meta_description": "The Maldives reopened its borders on July 15, 2020, and its one-island-one-resort model may be the safest luxury travel bet of the year.",
+    "date": "May 04, 2020",
+    "date_iso": "2020-05-04",
+    "author": "Sasha Volkov",
+    "image": "https://images.pexels.com/photos/2724079/pexels-photo-2724079.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "unwto.org",
+      "reuters.com",
+      "tourism.gov.mv"
+    ],
+    "posted_iso": "2026-07-15",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
