@@ -125,5 +125,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Cuba Built a 42-Story Luxury Hotel Almost Nobody Sleeps In",
+    "slug": "cuba-hotels-honest-guide",
+    "meta_description": "Cuba's state hotels sit near empty while private stays thrive. A firsthand guide to where your money actually buys comfort in Havana and beyond.",
+    "date": "July 16, 2026",
+    "date_iso": "2026-07-16",
+    "author": "Global Traveler Marco",
+    "image": "https://images.pexels.com/photos/6989623/pexels-photo-6989623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "onei.gob.cu",
+      "reuters.com",
+      "state.gov"
+    ],
+    "posted_iso": "2026-07-16",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
