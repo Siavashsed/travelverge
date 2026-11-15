@@ -161,5 +161,45 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "The \u00a5286,000 Ryokan Night That Taught Me to Pay for the Water",
+    "slug": "japan-ryokan-private-onsen-kaiseki-cost",
+    "meta_description": "Japan's finest ryokan run $800 to $2,700 a night for two. What private onsen and kaiseki dinners really cost, and where your yen should go.",
+    "date": "November 15, 2026",
+    "date_iso": "2026-11-15",
+    "author": "Nina Bergstrom",
+    "image": "https://images.pexels.com/photos/12573595/pexels-photo-12573595.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "statistics.jnto.go.jp",
+      "mhlw.go.jp",
+      "soumu.go.jp",
+      "city.kyoto.lg.jp",
+      "env.go.jp"
+    ],
+    "posted_iso": "2026-11-15",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Barbados Bet $2,000 That You'd Rather Work From the Beach",
+    "slug": "barbados-welcome-stamp-2020-retrospective",
+    "meta_description": "The Barbados Welcome Stamp of 2020 let remote workers live on the island for 12 months. A luxury travel writer on what it meant and who it served.",
+    "date": "October 28, 2020",
+    "date_iso": "2020-10-28",
+    "author": "Nina Bergstrom",
+    "image": "https://images.pexels.com/photos/5273058/pexels-photo-5273058.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "unwto.org",
+      "wttc.org",
+      "barbadoswelcomestamp.bb",
+      "gov.bm"
+    ],
+    "posted_iso": "2026-11-15",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
