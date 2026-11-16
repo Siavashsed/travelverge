@@ -201,5 +201,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Amalfi's Cliffside Hotels Ranked: Le Sirenuse Loses Its Crown",
+    "slug": "amalfi-coast-cliffside-hotels-ranked",
+    "meta_description": "Amalfi Coast cliffside hotels ranked by view, service and dining, from a writer who has stayed at each. Why Il San Pietro beats Le Sirenuse.",
+    "date": "November 16, 2026",
+    "date_iso": "2026-11-16",
+    "author": "Nina Bergstrom",
+    "image": "https://images.pexels.com/photos/14309626/pexels-photo-14309626.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "whc.unesco.org",
+      "istat.it"
+    ],
+    "posted_iso": "2026-11-16",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
