@@ -255,5 +255,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Iceland's Best Geothermal Retreats Are Nowhere Near the Blue Lagoon",
+    "slug": "icelandic-geothermal-retreats-beyond-blue-lagoon",
+    "meta_description": "Icelandic geothermal retreats worth the drive: hidden hot spring hotels from Deplar Farm to Kerlingarfjoll, reviewed firsthand beyond the Blue Lagoon.",
+    "date": "November 19, 2026",
+    "date_iso": "2026-11-19",
+    "author": "Global Traveler Marco",
+    "image": "https://images.pexels.com/photos/35160896/pexels-photo-35160896.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "nea.is",
+      "ferdamalastofa.is",
+      "safetravel.is",
+      "pubmed.ncbi.nlm.nih.gov"
+    ],
+    "posted_iso": "2026-11-19",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
