@@ -292,5 +292,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Dubai or Abu Dhabi? The Best Luxury Hotels Aren't Where You'd Guess",
+    "slug": "dubai-abu-dhabi-luxury-hotels-desert-suites",
+    "meta_description": "Dubai and Abu Dhabi luxury hotels compared by someone who slept in them: desert resorts, sky-high suites and Michelin-starred dining, with honest trade-offs.",
+    "date": "November 21, 2026",
+    "date_iso": "2026-11-21",
+    "author": "Sasha Volkov",
+    "image": "https://images.pexels.com/photos/5377546/pexels-photo-5377546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "dubaitourism.gov.ae",
+      "guide.michelin.com"
+    ],
+    "posted_iso": "2026-11-21",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
