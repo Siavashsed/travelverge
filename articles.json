@@ -309,5 +309,41 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Skip the Famous Riads: Marrakech's Best Romance Hides Behind Plain Doors",
+    "slug": "hidden-gem-riads-marrakech-romantic-escape",
+    "meta_description": "The best boutique riads in Marrakech for a romantic escape are small, quiet and tucked off the main lanes. Here's how to pick one and what to skip.",
+    "date": "November 22, 2026",
+    "date_iso": "2026-11-22",
+    "author": "Nina Bergstrom",
+    "image": "https://images.pexels.com/photos/6662080/pexels-photo-6662080.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "reuters.com",
+      "whc.unesco.org"
+    ],
+    "posted_iso": "2026-11-22",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Thomas Cook's 2 A.M. Collapse Stranded 150,000 Britons Abroad",
+    "slug": "thomas-cook-collapse-2019-stranded-travelers",
+    "meta_description": "Thomas Cook collapsed in September 2019 and the UK flew 150,000 people home. Here's what the failure meant for holidaymakers and hotels.",
+    "date": "March 26, 2019",
+    "date_iso": "2019-03-26",
+    "author": "Global Traveler Marco",
+    "image": "",
+    "outbound_links": [
+      "caa.co.uk",
+      "bbc.com",
+      "abta.com"
+    ],
+    "posted_iso": "2026-11-22",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
